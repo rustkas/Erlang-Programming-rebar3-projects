@@ -1,7 +1,5 @@
-complex_ds
+ex01_shell
 =====
-
-An OTP library
 
 Build
 -----
@@ -9,7 +7,7 @@ Build
 
 Run
 -----
-	$ rebar3 eunit -v --app complex_ds
+	$ rebar3 eunit -v --app shell
 	
 Format
 -----

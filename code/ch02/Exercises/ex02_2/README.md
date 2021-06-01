@@ -1,7 +1,7 @@
-complex_ds
+ex02_2
 =====
 
-An OTP library
+An OTP application
 
 Build
 -----
@@ -9,7 +9,7 @@ Build
 
 Run
 -----
-	$ rebar3 eunit -v --app complex_ds
+	$ rebar3 eunit -v --app analysis
 	
 Format
 -----
@@ -18,4 +18,3 @@ Format
 Generate documentation
 -----
 	$ rebar3 edoc
-	
