@@ -1,0 +1,6 @@
+-sname ex06_guards
+
+-setcookie ex06_guards_cookie
+
++K true
++A30
