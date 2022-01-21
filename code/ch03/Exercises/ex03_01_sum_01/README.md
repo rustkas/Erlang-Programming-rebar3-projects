@@ -46,7 +46,22 @@ sum:sum1(5) == 15.
 sum:sum2(5) == 15.
 ```
 
-An OTP library
+### Property based testing
+
+rebar.config
+-----
+
+```
+%% the plugin itself
+{project_plugins, [rebar3_proper]}.
+
+{profiles,
+    [{test, [
+        {erl_opts, [nowarn_export_all]},
+        {deps, [proper]}
+    ]}
+]}.
+```
 
 Get dependencies
 -----
