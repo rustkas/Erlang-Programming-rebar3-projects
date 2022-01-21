@@ -36,10 +36,12 @@ Run shell
 	$ werl +pc unicode
 	> code:add_path
 
-Run EUnit
+### Run EUnit
 -----
 	$ rebar3 eunit -v --app sum
 	rebar3 eunit -m sum_test
+
+#### EUnit tests:
 
 ```
 sum:sum1(5) == 15.
