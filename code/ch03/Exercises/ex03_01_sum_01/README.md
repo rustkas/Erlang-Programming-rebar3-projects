@@ -1,11 +1,27 @@
-ex03_01_sum_01
+Exercise 3-1: Evaluating Expressions
 =====
 
-An OTP application
+Write a function sum/1 which, given a positive integer N, will return the sum of all the
+integers between 1 and N.
+Example:
+
+`sum(5) ⇒ 15.`
+
+Write a function `sum/2` which, given two integers `N` and `M`, where `N =< M`, will return
+the sum of the interval between `N` and `M`. 
+
+If `N > M`, you want your process to terminate abnormally.
+
+Example:
+```
+sum(1,3) ⇒ 6.
+sum(6,6) ⇒ 6.
+```
+
+## An OTP application
 
 Create new project
-----	
-Create ex14_recurssion
+
 ----	
 	# all commands in one string
 	$ rebar3 new umbrella ex03_01_sum_01 && cd ex03_01_sum_01 && rm -R apps && mkdir lib && cd lib && rebar3 new lib sum && cd ..
