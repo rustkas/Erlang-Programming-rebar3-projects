@@ -20,9 +20,15 @@ Build
 -----
 	$ rebar3 compile
 
-Run
+Run EUnit
 -----
 	$ rebar3 eunit -v --app io_examples
+
+Run shell
+-----
+
+	$ rebar3 shell --apps io_examples
+	> r3:do(compile). % recompile after source code editing 
 	
 Format
 -----

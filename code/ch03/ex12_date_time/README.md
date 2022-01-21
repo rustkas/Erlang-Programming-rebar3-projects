@@ -20,7 +20,7 @@ Build
 -----
 	$ rebar3 compile
 
-Run
+Run EUnit
 -----
 	$ rebar3 eunit -v --app date_time
 	

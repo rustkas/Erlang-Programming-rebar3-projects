@@ -25,7 +25,8 @@ create() ->
           "Mike",
           "Williams",
           [{shoeSize, 41}, {likes, ['boats', 'wine']}]}],
-    List.  % ?debugFmt("~n~p~n", [List])
+    List.  
+	%?debugFmt("~n~p~n", [List])
 
 readability() ->
     JoeAttributeList =
@@ -39,5 +40,5 @@ readability() ->
     People = [JoeTuple, MikeTuple],
     People.
 
-.
+
 -endif.

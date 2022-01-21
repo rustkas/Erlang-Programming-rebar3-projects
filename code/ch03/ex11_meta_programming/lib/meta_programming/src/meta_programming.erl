@@ -20,7 +20,7 @@ apply_2_examples() ->
     FunEven = fun examples:even/1,
     ?assert(is_function(FunEven)),
     Result_10 = apply(FunEven, [10]),
-    Result_10,
+    %Result_10,
     ?assert(Result_10),
     % ?debugFmt("~n~p~n", [Result_10]),
     ok.

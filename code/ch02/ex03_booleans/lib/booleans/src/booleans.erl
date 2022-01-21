@@ -176,31 +176,31 @@ boolean_axioms() ->
     ?assertEqual((A and not A) or B, B).
 
 consequences_of_axioms() ->
-A = true,
-B = not A,    
+	A = true,
+	B = not A,    
 
-%(1)
-% A ∪ A = A
-?assertEqual(A and A, A),
-?assertEqual(B and B, B),
-% A ∩ A = A
-?assertEqual(A or A, A),
-?assertEqual(B or B, B),
+	%(1)
+	% A ∪ A = A
+	?assertEqual(A and A, A),
+	?assertEqual(B and B, B),
+	% A ∩ A = A
+	?assertEqual(A or A, A),
+	?assertEqual(B or B, B),
 
-% A = A ∪ (A ∩ B) = (A ∪ A) ∩ (A ∪ B) = 
-% (A ∩ (A ∪ B)) ∪ (A ∩ (A ∪ B)) = A ∪ A
-?assert(
-% syntax error    
-% A == A and (A or B) == (A and A) or (A and B)
-% Use () to divide logical temp values
-(((A == A and (A or B)) == (A and A) or (A and B)) == (A or (A and B)) and (A or (A and B))) == A and A
-),
+	% A = A ∪ (A ∩ B) = (A ∪ A) ∩ (A ∪ B) = 
+	% (A ∩ (A ∪ B)) ∪ (A ∩ (A ∪ B)) = A ∪ A
+	?assert(
+	% syntax error    
+	% A == A and (A or B) == (A and A) or (A and B)
+	% Use () to divide logical temp values
+	(((A == A and (A or B)) == (A and A) or (A and B)) == (A or (A and B)) and (A or (A and B))) == A and A
+	),
 
-% A = A ∩ (A ∪ B) = (A ∩ A) ∪ (A ∩ B) = 
-% (A ∪ (A ∩ B)) ∩ (A ∪ (A ∩ B)) = A ∩ A
-?assert(
-(((A == A or (A and B)) == (A or A) and (A or B)) == (A and (A or B)) or (A and (A or B))) == A or A
-).
+	% A = A ∩ (A ∪ B) = (A ∩ A) ∪ (A ∩ B) = 
+	% (A ∪ (A ∩ B)) ∩ (A ∪ (A ∩ B)) = A ∩ A
+	?assert(
+	(((A == A or (A and B)) == (A or A) and (A or B)) == (A and (A or B)) or (A and (A or B))) == A or A
+	).
 
 try_math() ->
    A = true,

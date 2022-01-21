@@ -27,7 +27,7 @@ print_bignum() ->
             * 1000000000
             * 1000000000
             * 1000000000,
-    ?debugFmt("bignum is ~n~p~n", [X]).
+    ?debugFmt("~nbignum is ~n~p~n", [X]).
 
 integers_1() ->
     [X1, X2, X3, X4] = [-234, 0, 10, 1000000000],
@@ -36,7 +36,7 @@ integers_1() ->
 
 based_on() ->
     % numbers based on (2 to 16)
-    ?debugFmt("2#1010 = ~p~n3#1010 = ~p~n4#1010 = ~p~n5#1010 "
+    ?debugFmt("~n2#1010 = ~p~n3#1010 = ~p~n4#1010 = ~p~n5#1010 "
               "= ~p~n6#1010 = ~p~n7#1010 = ~p~n8#1010 "
               "= ~p~n9#1010 = ~p~n10#1010 = ~p~n11#1010 "
               "= ~p~n12#1010 = ~p~n13#1010 = ~p~n14#1010 "
