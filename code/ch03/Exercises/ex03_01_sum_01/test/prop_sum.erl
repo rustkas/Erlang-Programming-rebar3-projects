@@ -4,13 +4,10 @@
 %%%%%%%%%%%%%%%%%%
 %%% Properties %%%
 %%%%%%%%%%%%%%%%%%
-prop_test() ->
-	 ?FORALL(Type, term(),
+prop_sum1_test() ->
+	 ?FORALL(Number, pos_integer(),
 		 begin
-			 boolean(Type)
+		 	sum:sum2(Number) =:= lists:sum(lists:seq(1,Number))
+			 
 		 end).
 
-%%%%%%%%%%%%%%%
-%%% Helpers %%%
-%%%%%%%%%%%%%%%
-boolean(_) -> true.
