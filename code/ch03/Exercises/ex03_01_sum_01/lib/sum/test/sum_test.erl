@@ -10,7 +10,7 @@
 -include_lib("eunit/include/eunit.hrl").
 
 sum1_test() ->
-    ?assert((1 =:= sum2(1))),
+  ?assert((1 =:= sum2(1))),
 	?assertError(function_clause, sum2(-1)),
 	?assertError(function_clause, sum2(0)),
 	?assertError(function_clause, sum2(-1.1)),
@@ -20,7 +20,7 @@ sum1_test() ->
 
 %-ifdef(IGNORE).
 sum2_test() ->
-    ?assert((1 =:= sum2(1))),
+  ?assert((1 =:= sum2(1))),
 	?assertError(function_clause, sum2(-1)),
 	?assertError(function_clause, sum2(0)),
 	?assertError(function_clause, sum2(-1.1)),
