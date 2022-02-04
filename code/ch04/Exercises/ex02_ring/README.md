@@ -5,8 +5,6 @@ rebar3 new lib ex02_ring && cd ex02_ring && rm -R src && mkdir lib && cd lib && 
 
 An OTP library
 
-An OTP library
-
 Build
 -----
 
