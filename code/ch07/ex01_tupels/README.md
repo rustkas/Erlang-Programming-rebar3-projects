@@ -1,7 +1,7 @@
 ex01_tupels
 =====
 ```
-rebar3 new lib ex01_tupels && cd 1_tupels && rm -R src && mkdir lib && cd lib && rebar3 new lib tupels && cd ..
+rebar3 new lib ex01_tupels && cd ex01_tupels && rm -R src && mkdir lib && cd lib && rebar3 new lib tupels && cd ..
 ```
 
 An OTP library
