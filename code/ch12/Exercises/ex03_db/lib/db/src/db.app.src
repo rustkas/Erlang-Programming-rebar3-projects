@@ -1,0 +1,15 @@
+{application, db,
+ [{description, "Simple Database"},
+  {vsn, "0.1.0"},
+  {modules, [db, my_db_gen, my_db_sup, db_app]},
+  {registered, [my_db_gen, my_db_sup]},
+  {applications,
+   [kernel,
+    stdlib
+   ]},
+  {env,[]},
+  {mod, {db_app,[]}},  
+
+  {licenses, ["Apache 2.0"]},
+  {links, []}
+ ]}.
